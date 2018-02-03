@@ -2,13 +2,13 @@
 
 - Tipo: `lectura`
 - Formato: `self-paced`
-- Duración: `15min`
+- Duración: `30min`
 
 ***
 
-## ¿Porqué es importante HTML para la web?
+## ¿Por qué es importante HTML para la web?
 
-Nosotras ya aprendimos que es HTML y cómo funciona, lo que nos falta es saber
+Nosotras ya sabemos que es HTML y cómo funciona, lo que nos falta es saber
 que los documentos html son el corazón de la web.
 
 La web está compuesta principalmente por estos documentos, que como sabemos
@@ -23,6 +23,6 @@ es un documento HTML
 
 La web es un sistema de hipertexto, razón específica de porque HTML es de
 vital importancia para la web y con HTML5 la importancia es aun mayor por todas
-las novedades
+las ventajas que ofrece.
 
 [importanciaHTML](https://lh3.googleusercontent.com/XJr1bEuGDRDFzyQvhANCQW2zRcTAABiWpzGiJPwGTRWR0p9cLMJhgJYEtUADdjx9Nocula9o5Wo_AzqKpJFkkx_Z9j1amQoWgD4QYkNkhLk_9hep46A)

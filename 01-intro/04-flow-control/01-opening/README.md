@@ -2,7 +2,7 @@
 
 * Tipo: `lectura`
 * Formato: `self-paced`
-* Duración: `10min`
+* Duración: `15min`
 
 ## Objetivos de Aprendizaje
 
@@ -17,7 +17,7 @@ En esta unidad aprenderemos:
 
 ***
 
-## Guia de preguntas y conceptos clave
+## Guía de preguntas y conceptos clave
 
 Cuando empezamos a estudiar un tema nuevo, es útil tener una idea de los
 conceptos más importantes de lo que vamos a aprender y de los temas centrales
@@ -32,7 +32,7 @@ sirva como un "checklist" que vas marcando a medida que vas progresando.
 * ¿Por qué quisiéramos modificar el control de flujo de un programa?
 * ¿Cuáles son las formas de modificar el flujo de un programa? Dibuja una
   representación de cada una
-* ¿Qué significa `else` de una sentencia `if...else`? Dame un ejemplo
+* ¿Qué significa `else` de una sentencia `if...else`? Menciona un ejemplo
 * ¿Cuál es la diferencia entre un `while` y un `do`?
 * ¿Cuáles son las 3 partes (sentencias) esenciales de un `for`? Dame un ejemplo
 * ¿Para qué utilizamos `break` y `continue` en un `for`? Dame un ejemplo
@@ -47,5 +47,5 @@ sirva como un "checklist" que vas marcando a medida que vas progresando.
 * ¿Qué significa el valor de `return` de una función?
 * ¿Qué sucede cuando una función tiene varios valores de `return`?
 * ¿Por qué podemos resolver problemas más complejos sabiendo
-  `estructuras condicionales`,  `estructuras repetitivas` y `funciones`? Dame un
+  `estructuras condicionales`,  `estructuras repetitivas` y `funciones`? Da un
   ejemplo

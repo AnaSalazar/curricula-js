@@ -17,9 +17,12 @@ Javascript`, asegurando que sabemos:
 ## Agenda
 
 1. Entender bien los conceptos clave dibujando en la pizarra:
+
    - Variables (tentáculos)
    - Tipos de datos
+
 2. Por medio de ejemplos en la consola repasar el funcionamiento de:
+
    - `var`
    - `prompt()`
    - `alert()`
@@ -29,5 +32,6 @@ Javascript`, asegurando que sabemos:
    - `toLowerCase()`
    - `slice()`
    - `parseInt()`
+
 3. Resolver el [quiz](https://goo.gl/forms/1L5WzwV5MXNqcOmG3) y analizar
    resultados

@@ -6,7 +6,7 @@
 
 ## Objetivos
 
-- Entender qué es el control de flujo de un programa
+- Entender qué es el `control de flujo` de un programa
 - Entender qué son `estructuras condicionales` y cómo afectan el flujo del
   programa
 - Entender qué son `estructuras repetitivas` y cómo afectan el flujo del
@@ -43,9 +43,9 @@ computador qué hacer.
 
 ### 1. Flujo en línea recta
 
-Cuando un programa contiene más de una sentencia, éstas son ejecutadas de arriba
-hacia abajo, una por una. Por ejemplo, el siguiente programa tiene tres
-sentencias: la primera le declara una variable llamada `name` con el valor del
+Cuando un programa contiene más de una sentencia, éstas son ejecutadas de
+arriba hacia abajo, una por una. Por ejemplo, el siguiente programa tiene tres
+sentencias: la primera declara una variable llamada `name` con el valor del
 string 'Michelle'; la segunda, imprime en la consola un mensaje personalizado de
 saludo 'Hola Michelle'; y la tercera, imprime en la consola un mensaje que dice
 'Qué nombre tan largo tienes!'.
@@ -88,15 +88,9 @@ if (condición) {
 }
 ```
 
-Cuando necesitamos ejecutar múltiples sentencias, podemos encerrarlas en llaves
-({ y }). Las llaves agrupan las sentencias, haciéndolos valer por una sola. Una
-secuencia de sentencias encerradas en llaves es llamada un **bloque** (de
-código). Muchos programadores de JavaScript encierran cada cuerpo de un `if` (y
-en los bucles, como verás más adelante), en llaves. Lo hacen en nombre de la
-consistencia y para evitar tener que añadir o quitar las llaves cuando el número
-de sentencias en el cuerpo cambie. Otros, valoran la brevedad y en el caso del
-`if` no utilizan las llaves. En este curso, siempre usaremos las llaves para
-ayudarnos a organizar nuestro código.
+Las llaves ( **{ }** )  agrupan las sentencias, haciéndolas valer por una sola.
+Una secuencia de sentencias encerradas en llaves es llamada un **bloque** (de
+código).
 
 Volvamos al ejemplo anterior y agreguemos una condición antes de la sentencia
 que imprime el segundo mensaje:
@@ -115,7 +109,8 @@ Con esta modificación, antes de imprimir en la consola el segundo mensaje ('Qu�
 nombre tan largo tienes!'), el programa verifica si la longitud del string
 `name` es mayor a 7. De ser así, se imprime el segundo mensaje. De no ser así,
 no se ejecuta esa sentencia. En este caso, dado que _Michelle_ tiene 8
-caracteres, la condición es `true`. Por lo tanto, se imprime el segundo mensaje.
+caracteres, la condición es `true`. Por lo tanto, se imprime el segundo
+mensaje.
 
 Cambiemos un poco este ejemplo, modificando el valor de `name` a 'Ana'.
 
@@ -202,7 +197,7 @@ El diagrama de flujo para este programa es algo así:
 ![Flujo condicional](http://eloquentjavascript.net/img/controlflow-nested-if.svg)
 
 Veamos otro ejemplo de la aplicación de la sentencia `if...else`. Esta vez, con
-un video de otra profesora estrella de Laboratoria, Alexandra :)
+un vídeo de otra profesora estrella de Laboratoria, Alexandra :)
 
 [![ejercicio guiado if...else JS for Kids pg 94](https://img.youtube.com/vi/-rNwUIEQJnc/0.jpg)](https://www.youtube.com/watch?v=-rNwUIEQJnc)
 
@@ -286,18 +281,19 @@ console.log(12);
 //   … etcetera
 ```
 
-Eso funciona, pero la idea de escribir un programa es trabajar menos, no más. Si
-necesitamos todos los números menores que 1,000, lo anterior sería imposible de
-trabajar. Lo que necesitamos es una forma de repetir algo de código. Esta forma
-de **control de flujo** es llamada bucle. El control de flujo por bucles nos
-permite regresar a cierto punto en el programa en el que estuvimos antes y
-repetirlo con nuestro estado actual, tal como lo describe el siguiente diagrama:
+Eso funciona, pero la idea de escribir un programa es trabajar menos, no más.
+Si necesitamos todos los números menores que 1,000, lo anterior sería imposible
+de trabajar. Lo que necesitamos es una forma de repetir algo de código. Esta
+forma de **control de flujo** es llamada bucle. El control de flujo por bucles
+nos permite regresar a cierto punto en el programa en el que estuvimos antes y
+repetirlo con nuestro estado actual, tal como lo describe el siguiente
+diagrama:
 
 ![Flujo bucle](http://eloquentjavascript.net/img/controlflow-loop.svg)
 
 #### Bucles `while`
 
-El bucle más sencillo es el bucle `while` (que significa "mientras" en español).
+El bucle más sencillo es el bucle `while` que significa "mientras" en español.
 Un bucle `while` ejecuta repetidamente una serie de sentencias hasta que una
 condición particular deja de ser verdadera. Al escribir un bucle `while`, estás
 diciendo: _"Sigue haciendo esto mientras esta condición sea verdadera. Detente
@@ -306,11 +302,12 @@ cuando la condición se vuelva falsa."_
 Como muestra el ejemplo a continuación, una sentencia que comienza con el
 keyword `while` crea un bucle. Después de `while` viene una expresión en
 paréntesis que representa la condición y después un conjunto de sentencias (muy
-parecido al caso del `if`). Sin embargo, a diferencia del `if`, el bucle ejecuta
-la sentencia mientras la condición produzca un valor que sea `true`. Por eso es
-muy importante que el conjunto de sentencias incluya algo que _"cambia"_ para
-que la condición eventualmente sea falsa. De lo contrario, terminarás con un
-ciclo infinito que nunca se detendrá, y eso usualmente es malo.
+parecido al caso del `if`). Sin embargo, a diferencia del `if`, el bucle
+ejecuta la sentencia mientras la condición produzca un valor que sea `true`.
+Por eso es muy importante que el conjunto de sentencias incluya algo que
+_"cambia"_ para que la condición eventualmente sea falsa. De lo contrario,
+terminarás con un ciclo infinito que nunca se detendrá, y eso usualmente es
+malo.
 
 ```js
 while (condición) {
@@ -341,17 +338,17 @@ condición. Queremos que el bloque dentro del `while` corra mientras el valor de
 la primera, imprime el número (con console.log), y la segunda incrementa
 `number` en 2 (porque queremos imprimir los pares únicamente). La variable
 `number` demuestra la forma en que una variable puede dar seguimiento al
-progreso de un programa. Cada vez que el bucle se repite, `number` se incrementa
-en 2. Entonces, al principio de cada repetición, el valor de la variable
-`number` es comparado con el número 12 para decidir si el programa ha hecho todo
-el trabajo que tenía que hacer. Es importante que entendamos que si no
-modificamos el valor de `number` con la segunda sentencia, la condición (number
-  <=12) siempre será `true` y tendremos un ciclo infinito que nunca se detendrá.
-Esto puede causar que tu computadora tenga problemas y se congele.
+progreso de un programa. Cada vez que el bucle se repite, `number` se
+incrementa en 2. Entonces, al principio de cada repetición, el valor de la
+variable `number` es comparado con el número 12 para decidir si el programa ha
+hecho todo el trabajo que tenía que hacer. Es importante que entendamos que si
+no modificamos el valor de `number` con la segunda sentencia, la condición
+(number <= 12) siempre será `true` y tendremos un ciclo infinito que nunca se
+detendrá. Esto puede causar que tu computadora tenga problemas y se congele.
 
 Si creas un bucle infinito en uno de los ejemplos, usualmente se te preguntará
 si quieres detener el script después de unos cuantos segundos. Si eso falla,
-tendrás que cerrar la pestaña en la que estás trabajando, o, en otros
+tendrás que cerrar la pestaña en la que estás trabajando, o en otros
 navegadores, cerrar el navegador entero para recuperarte.
 
 Veamos algunas variantes de este mismo problema para asegurarnos que entendemos
@@ -423,13 +420,13 @@ convierte un valor a `Boolean` negándolo y todas las cadenas excepto `''` se
 convierten a `true`. Esto significa que el bucle continúa corriendo hasta que
 des un nombre que no sea una cadena vacía.
 
-#### _Bucles `for`_
+#### Bucles `for`
 
-Muchos bucles siguen el patrón de los ejemplos previos del `while`. Primero, una
-variable “contador” es creada para dar seguimiento al progreso del bucle. Luego
-viene el bucle `while`, cuya expresión condicional normalmente verifica si el
-contador ha alcanzado cierto límite. El final del cuerpo del bucle, el contador
-es actualizado para dar seguimiento al progreso.
+Muchos bucles siguen el patrón de los ejemplos previos del `while`. Primero,
+una variable “contador” es creada para dar seguimiento al progreso del bucle.
+Luego viene el bucle `while`, cuya expresión condicional normalmente verifica
+si el contador ha alcanzado cierto límite. El final del cuerpo del bucle, el
+contador es actualizado para dar seguimiento al progreso.
 
 Debido a que este patrón es tan común, JavaScript y otros lenguajes similares
 proveen una versión un poco más corta y más completa: el bucle `for`.
@@ -450,9 +447,9 @@ relacionadas con el "estado" del bucle están agrupadas.
 Los paréntesis después del keyword `for` tienen que contener dos puntos y coma
 (`;`). La parte que está antes del primer punto y coma _inicializa_ el bucle,
 normalmente al definir una variable. La segunda parte es la expresión que
-_verifica_ si el bucle tiene que continuar. La parte final _actualiza_ el estado
-del bucle antes de cada iteración. En la mayoría de los casos, esto es más corto
-y claro que una construcción con `while`.
+_verifica_ si el bucle tiene que continuar. La parte final _actualiza_ el
+estado del bucle antes de cada iteración. En la mayoría de los casos, esto es
+más corto y claro que una construcción con `while`.
 
 Aquí está un código que calcula 2^10 (2 exponencial 10), usando el bucle `for`:
 
@@ -491,8 +488,8 @@ imprime el texto 'Hola mundo!' varias veces:
 
 #### _Forzando la salida de un bucle_
 
-Hacer que la condición del bucle produzca _false_ no es la única forma de que un
-bucle termine. Podemos usar la sentencia especial `break`, utilizada en
+Hacer que la condición del bucle produzca _false_ no es la única forma de que
+un bucle termine. Podemos usar la sentencia especial `break`, utilizada en
 `switch`, que tiene el efecto de salir inmediatamente del bucle que la esté
 encerrando.
 
@@ -523,9 +520,10 @@ atorado en un bucle infinito.
 
 La palabra clave `continue` es similar a `break` en que influencia el progreso
 del bucle. Cuando se encuentra `continue` en el cuerpo de un bucle, el control
-sale del curpo del bucle inmediatamente y continúa en la próxima iteración del
+sale del cuerpo del bucle inmediatamente y continúa en la próxima iteración del
 bucle.
 
-A continuación Michelle te ayuda explica, con un ejemplo, las aplicaciones de
+A continuación Michelle te explica con un ejemplo, las aplicaciones de
 `break` y `continue` dentro de un `for`:
+
 [![ejemplo de break y continue](https://img.youtube.com/vi/C5rIORzHOgg/0.jpg)](https://www.youtube.com/watch?v=C5rIORzHOgg)
